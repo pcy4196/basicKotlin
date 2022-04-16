@@ -64,4 +64,65 @@ fun main() {
     // 전위 연산자일 경우 연산작업 이후 변수에 갑 대입
     println("a9 : $a9, r9 : $r9");
     println("a10 : $a10, r10 : $r10");
+
+    println("----------------------------");
+
+    val r11:Int = 10 + 3;
+    val r12:Int = 10 - 3;
+    val r13:Int = 10 * 3;
+    var r14:Int = 10 / 3;
+    val r15:Int = 10 % 3;
+
+    println("$r11, $r12, $r13, $r14, $r15");
+
+    val r16:IntRange = 10..20;
+
+    println("r16 : $r16");
+    // r16 : 10..20
+
+    println("----------------------------");
+
+    var a11:Int = 10;
+    var a12:Int = 10;
+    var a13:Int = 10;
+    var a14:Int = 10;
+    var a15:Int = 10;
+
+    a11 += 3;
+    a12 -= 3;
+    a13 *= 3;
+    a14 /= 3;
+    a15 %= 3;
+
+    println("$a11, $a12, $a13, $a14, $a15");
+    // 13, 7, 30, 3, 1
+
+    println("----------------------------");
+
+    val a16:Int = 10;
+
+    val r17:Boolean = a16 == 10;
+    val r18:Boolean = a16 != 10;
+
+    println("$r17, $r18");
+
+    // true, false
+
+    val r19:Boolean = a16 == 20;
+    val r20:Boolean = a16 != 20;
+
+    println("$r19, $r20");
+    // false, true
+
+    println("----------------------------");
+
+    val a17:Int = 10;
+    val r21:Boolean = a17 < 20;
+    val r22:Boolean = a17 > 20;
+    val r23:Boolean = a17 <= 10;
+    val r24:Boolean = a17 >= 10;
+
+    println("$r21, $r22, $r23, $r24");
+    // true, false, true, true
+
 }
